@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main() {
+    int number,reverse_number;
+   
+    scanf("%d",&number);
+    if((number>=10000&&number<=99999)) {
+        reverse_number = ((number%10)*10000+((number/10)%10)*1000+((number/100)%10)*100+((number/1000)%10)*10+((number/10000)*1));
+        printf("Reversed number: %d",reverse_number);
+    }
+    else if(number<0 &&(number<=-10000||number>=-99999)) {
+        reverse_number = ((number%10)*10000+((number/10)%10)*1000+((number/100)%10)*100+((number/1000)%10)*10+((number/10000)*1));
+        printf("Reversed number: - %d",reverse_number);
+    }
+   
+    else {
+        printf("Invalid input! Please enter a five digit number.");
+    }
+    return 0;
+}
