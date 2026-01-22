@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main() {
+    double D,M,F,I,C;
+    scanf("%lf",&D);
+    if(D<0) {
+        printf("Invalid input. Distance cannot be negative.");
+    }
+    else {
+        M= D*1000;
+        F= D*3280.84;
+        I= D*39370.1;
+        C= D*100000;
+        printf("Distance in meters: %.2lf",M);
+    }
+    return 0;
+}
