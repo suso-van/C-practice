@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main() {
+    int amount,Hs,Fs,Os,Hr,Fr;
+    scanf("%d",&amount);
+    if(amount<0||amount==0) {
+        printf("Invalid amount. Please enter a positive multiple of 10.");}
+    else if(amount%10!=0) {
+            printf("Invalid amount. Please enter a positive multiple of 10.");
+        }
+    
+    else{
+        Hs= amount/100;
+        Hr= amount%100;
+        Fs= Hr/50;
+        Fr= Hr%50;
+        Os= Fr/10;
+        printf("100s: %d",Hs);
+    }
+    return 0;
+}
