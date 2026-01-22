@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main() {
+    int number,n1,n2,n3,n4,n5,new_number;
+    printf("Enter a five  digit number: ");
+    scanf("%d",&number);
+    if(number<-99999||number >99999||(number >-10000 && number<10000)) {
+        printf("Invalid input! Please enter a five-digit number.\n");
+        return 1;
+    }
+    int is_negative =(number<0);
+    if(is_negative) {
+        number=-number;
+    }
+    new_number = number;
+    n5 = (new_number % 10 + 1)%10;
+    new_number /= 10;
+    n4=( new_number%10+1)%10;
+    new_number/=10;
+    n3=(new_number%10+1)%10;
+    new_number/=10;
+    n2=(new_number%10+1)%10;
+    new_number/=10;
+    n1=(new_number%10+1)%10;
+    if (n1==0&&n2==0&&n3==0&&n4==0&&n5==0) {
+        printf("New number after incrementing each digit: 0\n");
+    }
+    else{
+        printf("New number after incrementing each digit:%d%d%d%d%d\n",n1,n2,n3,n4,n5);
+    }
+
+    return 0;
+}
