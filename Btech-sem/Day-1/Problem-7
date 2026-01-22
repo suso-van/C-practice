@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main() {
+    int basic_salary;
+    float DA,HRA,sum;
+    printf("Enter the basic salary:");
+    scanf("%d",&basic_salary);
+    if(basic_salary<0) {
+        printf("Invalid input! Salary cannot be negative.");
+    }
+    else{
+    DA= (basic_salary*40)/100;
+    HRA=(basic_salary*20)/100;
+    sum= (basic_salary+DA+HRA);
+    printf("Gross salary: %0.2f\n",sum);
+    }
+    return 0;
+}
