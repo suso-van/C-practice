@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main() {
+    int number,first_digit,last_digit,sum;
+    printf(" Sum of the first and last digit: ");
+    scanf("%d",&number);
+    if(number>=1000&&number<=9999){
+        last_digit= number%10;
+        first_digit= number/1000;
+        sum= first_digit+last_digit;
+        printf("%d",sum);
+    }
+    else if(number<=-1000||number<=-9999){
+        last_digit= number%10;
+        first_digit= number/1000;
+        sum= first_digit+last_digit;
+        printf("-%d",sum);
+    }
+    else{
+        printf("Invalid input! Please enter a four-digit number");
+    }
+    return 0;
+}
