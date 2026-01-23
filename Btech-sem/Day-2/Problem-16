@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main(){
+    char input[100];
+    int n;
+    scanf("%s",input);
+    n = atoi(input);
+    if(n!=0||input[n]=='n'){
+        if(n%2==0){
+            printf("Even");
+        }
+        else{
+            printf("odd");
+        }
+    }
+    else{
+        printf("Invalid input\n");
+    }
+    return 0;
+}
