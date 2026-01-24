@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main(){
+    char s= 'G';
+    for(int i=s;i>='A';i--){
+        for(int j=s;j>=i;j--){
+            printf(" ");
+        }
+        for(char k=i;k>='A';k--){
+            printf("%c",k);
+        }
+        printf("\n");
+    }
+    return 0;
+}
