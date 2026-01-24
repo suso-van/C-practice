@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main(){
+    int n;
+    printf;
+    scanf("%d",&n);
+    if(n<1||n>1000){
+        printf("Invalid input!Enter a number between 1 and 1000\n");
+        return 0;
+    }
+    struct Romannumericle{
+        int v;
+        char* c;
+    }
+    num[] = {{1000,"M"},{900,"CM"},{500,"D"},{400,"CD"},{100,"C"},{90,"XC"},{50,"L"},{40,"XL"},{10,"X"},{9,"IX"},{5,"V"},{4,"IV"},{1,"I"}};
+    printf("The Roman numeral is: ");
+    for(int i=0;i<13;i++){
+        while(n>=num[i].v){
+            printf("%s",num[i].c);
+            n-=num[i].v;
+        }
+    }
+    printf("\n");
+    return 0;
+}
