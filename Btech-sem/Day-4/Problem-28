@@ -1,0 +1,33 @@
+#include<stdio.h>
+void trmat(int n, int mat[n][n], int tr[n][n]){
+    for(int i=0; i<n;i++){
+        for(int j=0;j<n;j++){
+            tr[j][i]= mat[i][j];
+        }
+    }
+}
+int main(){
+    int n;
+    
+    scanf("%d",&n);
+    int mat[n][n],tr[n][n];
+    if(n==0){
+        printf("Invalid input! Matrix order must be positive");
+    }
+    else{
+         for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            scanf("%d",&mat[i][j]);
+        }
+    }
+    trmat(n,mat,tr);
+    
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            printf("%d ",tr[i][j]);
+        }
+        printf("\n");
+    }
+    }
+    return 0;
+}
