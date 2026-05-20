@@ -25,7 +25,6 @@ This work reflects a fundamentals-first approach toward systems programming and 
 - Prepare for core CS subjects (OS, DBMS, CN, Compilers)  
 - Build a strong base for systems and backend development
 
-
 ## How to Run
 ```
 gcc program.c -o program
