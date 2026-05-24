@@ -28,5 +28,6 @@ This work reflects a fundamentals-first approach toward systems programming and 
 ## How to Run
 ```
 gcc program.c -o program
+
 ./program
 ```
