@@ -18,7 +18,6 @@ This work reflects a fundamentals-first approach toward systems programming and 
 - Searching and sorting algorithms  
 - Basic data structures (stack, queue, linked list)
 
-
 ## Learning Objectives
 - Understand how memory works at a low level  
 - Write efficient and predictable code  
