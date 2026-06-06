@@ -5,6 +5,7 @@
 This repository contains my **C programming practice**, focused on building a strong foundation in **low-level programming and systems fundamentals**.  
 The code emphasizes correctness, memory awareness, and disciplined problem-solving.
 
+
 This work reflects a fundamentals-first approach toward systems programming and core computer science concepts.
 
 ## Topics Covered
